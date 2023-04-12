@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	  <head>
+	    <title>RES JEWELRY</title>
+	    <link rel="icon" href="icon.ico">
+	    <link href="style.css" rel="stylesheet" type="text/css">
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	  </head>
+	  <style type="text/css">
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #FFCCCC;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+input[type="text"], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+select option[value="pilih"] {
+  display: none;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+	  </style>
+	<body>
+
+	  <MARQUEE scrollamount="7" behavior="alternate" bgcolor="#FFCCCC" >Selamat Datang Di RES JEWELRY - Cincin Titanium Eksklusif Hand Made Dengan Kualitas Super Premium</MARQUEE>
+	  <div class="header">
+	  </div>
+
+	  <div class="topnav">
+	    <a href="index.html">Home</a>
+	    <a href="TentangKami.html">Tentang Kami</a>
+	    <a href="Catalog.html">Catalog</a>
+	    <a href="CaraPesan.html">Cara Pesan</a>
+	  </div>
+	  <br>
+	  <form method="post" action="berhasil.html">
+		  <h2>Form Pembelian</h2>
+		  	<div class="form-group">
+		    	<label for="nama">Nama</label>
+		    	<input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda">
+		  	</div>
+		  	<div class="form-group">
+			    <label for="No Telpon">No Telpon</label>
+			    <input type="text" id="No Telpon" name="No Telpon" placeholder="Masukkan No Telpon Anda">
+		  	</div>
+		  	<div class="form-group">
+			    <label for="alamat">Alamat</label>
+			    <textarea id="alamat" name="alamat" placeholder="Masukkan alamat Anda"></textarea>
+		  	</div>
+		  	<div class="form-group">
+			    <label for="kategori">Kategori</label>
+			    <input type="radio" name="var_kc" value="pertunangan"/>Cincin Pasangan
+				<input type="radio" name="var_kc" value="pernikahan"/>Cincin Pernikahan
+		  	</div>
+		  	<div class="form-group">
+			    <label for="produk">Nama Cincin</label>
+			    <select name="var_nc">
+				<option value="">Cincin Pasangan</option>
+				<option value="#">PA01</option>
+				<option value="#">PA02</option>
+				<option value="#">PA03</option>
+				<option value="#">PA04</option>
+				</select>
+			    <select name="var_nc">
+				<option value="">Cincin Pernikahan</option>
+				<option value="#">PR05</option>
+				<option value="#">PR6</option>
+				<option value="#">PR7</option>
+				<option value="#">PR8</option>
+				</select>	
+		  	</div>
+		  	<div class="form-group">
+		  		<label for="UC_Pria"> Ukuran Cincin Pria</label>
+		  		<select id="UC_Pria" name="UC_Pria">
+		  		<option value="#">Pilih Ukuran</option>
+		  		<option value="#">5 (15,6mm)</option>
+				<option value="#">5.5 (16mm)</option>
+				<option value="#">6 (16,45mm)</option>
+				<option value="#">6.5 (16,9mm)</option>
+				<option value="#">7 (17,3mm)</option>
+				<option value="#">7.5 (17,7mm)</option>
+				<option value="#">8 (18,2mm)</option>
+				<option value="#">8.5 (18,6mm)</option>
+				<option value="#">9 (19mm)</option>
+				<option value="#">9.5 (19,4mm)</option>
+				<option value="#">10 (19,8mm)</option>
+				</select>
+		  	</div>
+		  	<div class="form-group">
+		  		<label for="UC_Wanita"> Ukuran Cincin Wanita</label>
+		  		<select id="UC_Wanita" name="UC_Wanita">
+		  		<option value="#">Pilih Ukuran</option>
+		  		<option value="#">5 (15,6mm)</option>
+				<option value="#">5.5 (16mm)</option>
+				<option value="#">6 (16,45mm)</option>
+				<option value="#">6.5 (16,9mm)</option>
+				<option value="#">7 (17,3mm)</option>
+				<option value="#">7.5 (17,7mm)</option>
+				<option value="#">8 (18,2mm)</option>
+				<option value="#">8.5 (18,6mm)</option>
+				<option value="#">9 (19mm)</option>
+				<option value="#">9.5 (19,4mm)</option>
+				<option value="#">10 (19,8mm)</option>
+				</select>
+		  	</div>
+		  	<button type="submit">Beli</button>
+</form>
+	</body>
+</html>
