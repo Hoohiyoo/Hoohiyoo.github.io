@@ -76,6 +76,8 @@ p{
   box-shadow: 0 8px 14px 0 rgba(0,0,0,0.24),0 10px 50px 0 rgba(0,0,0,0.19);
 }
 
-a href{
-  style="text-decoration:none;
+a{
+  text-decoration:none;
+  color: white;
+  
 }
