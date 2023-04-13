@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@font-face {
+    font-family: 'The Blinders';
+    src: url('fonts/The\ Blinders.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Breymont';
+    src: url('fonts/Breymont-Bold.otf') format('opentype'), url('fonts/Breymont-Light.otf') format('opentype');
+}
+
+:root{
+    --color-bg : #0e0e0e;
+    --color-text : #ddc4a4;
+}
+
+body{
+    overflow-x: hidden;
+    margin: 0;
+    background: var(--color-bg);
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-text);
+}
+
+/*----------------STYLING HEAD AWAL--------------*/
+.intro{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    height: 120vh;
+    width: auto;
+}
+
+.intro-judul{
+    display: grid;
+    place-items: center;
+    margin: 0;
+    line-height: 1;
+    font-weight: 300;
+}
+
+.intro-head{
+    font-family: 'The Blinders';
+    font-size: 5rem;
+    font-weight: 300;
+    margin: 0 1rem;
+    white-space: nowrap;
+    color: var(--color-text);
+}
+
+.intro-sub{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+
+.intro-garis{
+    opacity: .6;
+    padding-bottom: 1rem;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    position: relative;
+}
+
+.intro-garis::after{
+    content: "";
+    width: 1px;
+    height: 2rem;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+}
+
+/*--------------------STYLING CONTENT PERKENALAN-------------------------*/
+
+.content{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 10rem 1rem;
+}
+
+.num-1{
+    cursor: default;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    transition: opacity 0.4s;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.num-1:hover{
+    transition-duration: 0.1s;
+    opacity: 0;
+}
+
+.marquee {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 1000px;
+}
+
+.marquee-isi {
+    width: fit-content;
+    display: flex;
+    position: relative;
+    opacity: 0;
+    transform: translate3d(calc(-25% + 20vw), 0, 0);
+    animation: marquee 5s linear infinite;
+    animation-play-state: paused;
+    opacity: 0;
+    transition: opacity 0.1s;
+}
+
+.marquee span {
+    cursor: default;
+    -webkit-text-stroke: 1px var(--color-text);
+    color: transparent;
+    white-space: nowrap;
+    font-style: italic;
+    font-size: 2rem;
+    padding: 0 1vw;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.num-1:hover ~ .marquee .marquee-isi {
+    opacity: 1;
+    animation-play-state: running;
+    transition-duration: 0.4s;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(calc(-25% + 20vw), 0, 0);
+    }
+
+    100% {
+        transform: translate3d(calc(-50% + 20vw), 0, 0);
+    }
+}
+
+
+
+.content p{
+    max-width: 660px;
+    margin: 1.5rem auto;
+    font-size: 1rem;
+    text-align: justify;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+/**/
+
+.skill-style{
+    text-align: center;
+    font-family: 'Breymont';
+    font-size: 5rem;
+}
+
+.char {
+    display: inline-block;
+    transform-origin: center center;
+}
