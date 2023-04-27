@@ -26,6 +26,7 @@ body{
 }
 
 .loading::after {
+    z-index: 999;
 	content: '- - -';
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5em;
