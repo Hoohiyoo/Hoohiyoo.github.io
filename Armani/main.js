@@ -3,7 +3,7 @@ import { preloadImages } from './utils'
 const grid = document.querySelector('.grid')
 const gridItems = [...grid.querySelectorAll('.grid-img')]
 
-preloadImages('.img').then( _ => {
+preloadImages('.img').then( ( _ ) => {
 
     const body = document.body
     body.classList.remove('loading')
