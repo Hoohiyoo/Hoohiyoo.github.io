@@ -12,6 +12,7 @@
 body{
     margin: 0;
     overflow-x: hidden;
+    position: relative;
 }
 
 .loading::before,
@@ -48,7 +49,6 @@ body{
 		transform: scale3d(0.5,0.5,1);
 	}
 }
-
 .grid{
     width: 100%;
     height: auto;
