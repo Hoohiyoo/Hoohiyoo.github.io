@@ -1,4 +1,4 @@
-const imagesLoaded = require('imagesloaded');
+import imagesLoaded from './imagesloaded/imagesloaded';
 
 const lerp = (a, b, n) => (1 - n) * a + n * b;
 
