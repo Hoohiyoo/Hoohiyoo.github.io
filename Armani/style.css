@@ -12,7 +12,6 @@
 body{
     margin: 0;
     overflow-x: hidden;
-    position: relative;
 }
 
 .loading {
@@ -28,7 +27,6 @@ body{
 
 .loading::after {
 	content: '- - -';
-    z-index: 999;
 	font-family: 'Roboto Mono', monospace;
 	font-size: 1.5em;
 	position: absolute;
