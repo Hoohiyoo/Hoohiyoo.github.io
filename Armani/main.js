@@ -3,7 +3,7 @@ import { preloadImages } from './utils'
 const grid = document.querySelector('.grid')
 const gridItems = [...grid.querySelectorAll('.grid-img')]
 
-preloadImages('.img').then( _ => {
+preloadImages('.img div').then( _ => {
 
 	// Smooth scrolling initialization (using Lenis https://github.com/studio-freight/lenis)
     document.body.classList.remove('loading')
