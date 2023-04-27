@@ -6,7 +6,7 @@ const gridItems = [...grid.querySelectorAll('.grid-img')]
 preloadImages('.img').then( ( _ ) => {
 
     const loading = document.querySelector('.loading')
-    loading.classList.remove('.loading')
+    loading.classList.remove('loading')
 	// Smooth scrolling initialization (using Lenis https://github.com/studio-freight/lenis)
     const lenis = new Lenis({
         lerp: 0.1,
