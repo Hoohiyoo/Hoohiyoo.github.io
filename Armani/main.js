@@ -1,9 +1,18 @@
-import { preloadImages } from '/utils'
+const content = document.querySelector('main')
+const images = [...content.querySelectorAll('.img')];
+const promises = [];
+
+images.forEach((image) => {
+  const promise = new Promise((resolve) => {
+    image.addEventListener('load', resolve);
+  });
+  promises.push(promise);
+});
 
 const grid = document.querySelector('.grid')
 const gridItems = [...grid.querySelectorAll('.grid-img')]
 
-preloadImages('.img').then( _ => {
+Promise.all(promises).then(() =>{
 	// Smooth scrolling initialization (using Lenis https://github.com/studio-freight/lenis)
 document.body.classList.remove('loading')
 const lenis = new Lenis({
