@@ -2,7 +2,7 @@ const grid = document.querySelector('.grid')
 const gridItems = [...grid.querySelectorAll('.grid-img')]
 
 const extradelay = 3000
-const imgLoad = imagesLoaded('.img')
+const imgLoad = imagesLoaded(gridItems)
 
 imgLoad.on('done', instance =>{
 	// Smooth scrolling initialization (using Lenis https://github.com/studio-freight/lenis)
