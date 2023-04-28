@@ -1,4 +1,4 @@
-import { preloadImages } from 'utils'
+import { preloadImages } from './utils'
 
 const grid = document.querySelector('.grid')
 const gridItems = [...grid.querySelectorAll('.grid-img')]
