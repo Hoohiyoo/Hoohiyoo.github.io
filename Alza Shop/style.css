@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Pathway Gothic One', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+nav {
+    background-color: aliceblue;
+    z-index: 1000;
+}
+
+nav .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.507);
+}
+
+nav .header img {
+    width: 80px;
+    height: auto;
+    padding-left: 10px;
+}
+
+nav .header p {
+    font-size: xx-large;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+nav .header a {
+    padding-right: 40px;
+    color: black;
+}
+
+.menu {
+    background-color: aliceblue;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(133, 133, 133, 0.507);
+}
+
+.menu a {
+    color: black;
+    font-size: larger;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.konten .first img {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.konten .second {
+    text-align: center;
+    line-height: 35px;
+    letter-spacing: 3px;
+    padding-top: 283px;
+    background-color: rgba(0, 0, 0, 0.527);
+    color: white;
+    position: absolute;
+    top: 123px;
+    width: 100%;
+    height: 293px;
+}
+
+.konten .second .button button{
+    border: none;
+    background-color: #3e6d9cce;
+}
+
+.konten .second .button button a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.konten .second .button button:hover {
+    background-color: white;
+}
+
+.konten .second .button button a:hover {
+    color: black;
+}
+
+.konten2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.konten2 p {
+    font-size: xx-large;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.konten2 .trend {
+    display: flex;
+    justify-content: space-between;
+}
+
+.konten2 .trend .foto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 300px;
+}
+
+.konten2 .trend .foto a {
+    color: rgb(37, 37, 37);
+    font-size: x-large;
+    background-color: rgba(255, 255, 255, 0.801);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    letter-spacing: 1px;
+    font-weight: 900;
+    margin-top: 350px;
+    margin-left: 35px;
+    margin-right: 35px;
+}
+
+.konten2 .trend .foto a:hover {
+    background-color: #3e6d9cbb;
+    color: white;
+}
+
+.konten3 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    height: 450px;
+    width: 1247px;
+    background-color: aquamarine;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+.konten3 .deskrip {
+    padding-top: 140px;
+    padding-bottom: 143px;
+    padding-left: 30px;
+}
+
+.konten3 .deskrip .t1 {
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px #3e6d9ca9;
+}
+
+.konten3 .deskrip .t2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 28px;
+}
+
+.konten3 .deskrip .t3 a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #3e6d9cbb;
+    padding: 5px 25px;
+}
+
+.konten3 .deskrip .t3 a:hover {
+    background-color: white;
+    color: black;
+}
+
+.konten3 .deskrip .d1 {
+    color: rgb(231, 208, 167);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    text-shadow: 3px 3px #3e6d9cbb;
+}
+
+.konten3 .deskrip .d2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 28px;
+    color: white;
+}
+
+.konten3 .deskrip .d3 a {
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #3e6d9cbb;
+    padding: 5px 25px;
+}
+
+.konten3 .deskrip .d3 a:hover {
+    background-color: white;
+    color: black;
+}
+
+.konten4 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.konten4 .wleft {
+    background-image: url("foto/manslide.jpg");
+    transform: scale(-1, 1);
+    height: 500px;
+    width: 600px;
+}
+
+.konten4 .wright {
+    text-align: left;
+    height: 500px;
+    width: 600px;
+}
+
+.konten4 .wright .wr1 {
+    margin-top: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.konten4 .wright .wr2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.konten4 .wright .wr3 a {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 5px 25px;
+    border: 2px solid black;
+}
+
+.konten4 .wright .wr3 a:hover {
+    color: aliceblue;
+    background-color: #3e6d9c;
+    border: 2px solid #3e6d9c;
+}
+
+.konten5 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+
+.konten5 .wright2 {
+    text-align: left;
+    height: 500px;
+    width: 600px;
+}
+
+.konten5 .wleft2 {
+    background-image: url(foto/womanslide.jpg);
+    height: 500px;
+    width: 600px;
+}
+
+.konten5 .wright2 {
+    text-align: left;
+    height: 500px;
+    width: 600px;
+}
+
+.konten5 .wright2 .wr1 {
+    margin-top: 200px;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.konten5 .wright2 .wr2 {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.konten5 .wright2 .wr3 a {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: aliceblue;
+    padding: 5px 25px;
+    border: 2px solid black;
+}
+
+.konten5 .wright2 .wr3 a:hover {
+    color: aliceblue;
+    background-color: #3e6d9c;
+    border: 2px solid #3e6d9c;
+}
+
+.footer {
+    background-image: url(foto/footer.jpg);
+    width: 100%;
+    height: 520px;
+}
+
+.footer .up {
+    margin: auto;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 480px;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+
+.footer .up h1 {
+    padding-top: 80px;
+    font-size: 100px;
+    letter-spacing: 2px;
+    text-shadow: 4px 4px #3e6d9c;
+    padding-bottom: 25px;
+}
+
+.footer .up p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px black;
+    padding-bottom: 45px;
+    line-height: 25px;
+}
+
+.footer .up a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.footer .down {
+    width: 100%;
+    height: 40px;
+    background-color: aliceblue;
+}
+
+.footer .down p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
