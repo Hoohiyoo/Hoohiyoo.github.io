@@ -74,6 +74,10 @@ a{
     stroke: #584df5;
 }
 
+.wrapper .box:nth-child(4):hover svg line{
+    stroke: #00f7ff;
+}
+
 .box:hover svg line{
     transition-delay: 0.1s;
 }
@@ -127,6 +131,10 @@ a{
 
 .wrapper .box:nth-child(2):hover h3, .wrapper .box:nth-child(2):hover span{
     color: #584df5;
+}
+
+.wrapper .box:nth-child(4):hover h3, .wrapper .box:nth-child(4):hover span{
+    color: #00f7ff;
 }
 
 .box:hover h3, .box:hover span{
