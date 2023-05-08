@@ -102,7 +102,7 @@ header .singin:hover {
     width: 100%;
     height: 500px;
     margin-top: 100px;
-    background-image: url(foto/bgup.jpg);
+    background-image: url(Foto/bgup.jpg);
     background-size: cover;
     background-position: 0 -400px;
 }
@@ -204,7 +204,7 @@ input {
 }
 
 .about .pict {
-    background-image: url(foto/bgabout.jpg);
+    background-image: url(Foto/bgabout.jpg);
     width: 500px;
     height: 300px;
     margin-top: 50px;
@@ -272,7 +272,7 @@ input {
 .tawaran .container .galery1 .makanan1 {
     width: 370px;
     height: 370px;
-    background-image: url(foto/makananpembuka.jpg);
+    background-image: url(Foto/makananpembuka.jpg);
     background-size: cover;
     background-position: -20px 0;
 }
@@ -280,7 +280,7 @@ input {
 .tawaran .container .galery2 .makanan2 {
     width: 370px;
     height: 370px;
-    background-image: url(foto/makananberat.jpg);
+    background-image: url(Foto/makananberat.jpg);
     background-size: cover;
     background-position: -90px ;
 }
@@ -288,7 +288,7 @@ input {
 .tawaran .container .galery3 .makanan3 {
     width: 370px;
     height: 370px;
-    background-image: url(foto/makananpenutup.jpg);
+    background-image: url(Foto/makananpenutup.jpg);
     background-size: cover;
     background-position: 0px -200px;
 }
@@ -528,35 +528,35 @@ input {
 .galery .up div:first-child {
     width: 33.3%;
     height: 100%;
-    background-image: url(foto/foto1.jpg);
+    background-image: url(Foto/foto1.jpg);
     background-size: cover;
 }
 
 .galery .up div:nth-child(2) {
     width: 33.3%;
     height: 100%;
-    background-image: url(foto/foto2.jpg);
+    background-image: url(Foto/foto2.jpg);
     background-size: cover;
 }
 
 .galery .up div:last-child {
     width: 33.3%;
     height: 100%;
-    background-image: url(foto/foto3.jpg);
+    background-image: url(Foto/foto3.jpg);
     background-size: cover;
 }
 
 .galery .down div:first-child {
     width: 50%;
     height: 100%;
-    background-image: url(foto/foto4.jpg);
+    background-image: url(Foto/foto4.jpg);
     background-size: cover;
 }
 
 .galery .down div:last-child {
     width: 50%;
     height: 100%;
-    background-image: url(foto/foto5.jpg);
+    background-image: url(Foto/foto5.jpg);
     background-size: cover;
 }
 
