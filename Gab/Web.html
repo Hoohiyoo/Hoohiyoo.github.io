@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Toko Handphone</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		/* CSS styling */
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #A9A9A9;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0 auto;
+			padding: 40px;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		nav li {
+			float: left;
+		}
+		nav li a {
+			display: block;
+			color: #ffffff;
+			text-align: center;
+			padding: 10px 20px;
+			text-decoration: none;
+		}
+		nav li a:hover {
+			background-color: #ddd;
+		}
+		header {
+			background-color: #000000;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 32px;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+		.container {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 50px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		.card {
+			background-color: #fff;
+			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+			max-width: 300px;
+			margin: 20px;
+			padding: 10px;
+			text-align: center;
+		}
+		.card img {
+			max-width: 100%;
+		}
+		.card h2 {
+			font-size: 24px;
+			margin-top: 10px;
+		}
+		.card p {
+			font-size: 18px;
+			margin-top: 10px;
+			color: #777;
+		}
+		.card button {
+			background-color: #4CAF50;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.card button:hover {
+			background-color: #3e8e41;
+		}
+		@media only screen and (max-width: 768px) {
+			.container {
+				flex-direction: column;
+				align-items: center;
+			}
+			.card {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<header>
+		Toko Handphone
+		<nav>
+			<ul>
+				<li><a href="Iphone13.html">iPhone</a></li>
+				<li><a href="Samsung.html">Samsung</a></li>
+				<li><a href="Xiaomi.html">Xiaomi</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="container">
+		<div class="card">
+			<img src="Ip14.jpg" alt="iPhone 14">
+			<h2>iPhone 14</h2>
+			<p>Rp 30.000.000</p>
+			<button>Beli Sekarang</button>
+		</div>
+		<div class="card">
+			<img src="SamsungS23.jpg" alt="Samsung S23">
+			<h2>Samsung S23</h2>
+			<p>Rp 25.000.000</p>
+			<button>Beli Sekarang</button>
+		</div>
+		<div class="card">
+			<img src="Xiaomi.png" alt="Xiaomi 13 Ultra">
+			<h2>Xiaomi 13 Ultra</h2>
+			<p>Rp 15.000.000</p>
+			<button>Beli Sekarang</button>
+		</div>
+	</div>
+</body
