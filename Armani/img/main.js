@@ -138,6 +138,7 @@ smoothScrolls.forEach(link => {
 
         gsap.to(window , {
             duration : 0.9,
+            delay : 0.5,
             scrollTo : {
                 y : targetElement,
                 offsetY:100
