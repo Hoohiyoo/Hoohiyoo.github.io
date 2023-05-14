@@ -78,7 +78,7 @@ a{
     stroke: #00f7ff;
 }
 .wrapper .box:nth-child(5):hover svg line{
-    stroke:salmon;
+    stroke: rgb(255, 0, 242);
 }
 
 .box:hover svg line{
@@ -140,7 +140,7 @@ a{
     color: #00f7ff;
 }
 .wrapper .box:nth-child(5):hover h3, .wrapper .box:nth-child(5):hover span{
-    color: salmon;
+    color: rgb(255, 0, 242);
 }
 
 .box:hover h3, .box:hover span{
