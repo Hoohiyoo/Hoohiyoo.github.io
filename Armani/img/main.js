@@ -3,6 +3,7 @@ const closeCtrl = document.querySelector('.action--close')
 const mainLinks = document.querySelectorAll('.mainmenu > a.mainmenu__item')
 const items = document.querySelectorAll('.menu__item')
 const mainMenuItems = document.querySelectorAll('.mainmenu__item')
+const smoothScrolls = document.querySelectorAll('.smooth-scroll')
 
 let scrollPosition = 0 ;
 	//Disable scroll
@@ -127,4 +128,22 @@ function animate(action) {
     });
 
 }
+
+smoothScrolls.forEach(link => {
+    link.addEventListener('click' , event => {
+        event.preventDefault()
+
+        const targetId = link.getAttribute('href')
+        const targetElement = document.querySelector(targetId)
+
+        gsap.to(window , {
+            duration : 0.9,
+            scrollTo : {
+                y : targetElement,
+                offsetY:100
+            },
+            ease : "power2.out"
+        })
+    })
+})
 
