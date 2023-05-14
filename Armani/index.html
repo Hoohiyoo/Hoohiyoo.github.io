@@ -6,72 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Giorgio Armani</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <main>
-        <div class="loading"></div>
-        <div class="hero" style="background-color: #0e0e0e;">
-            <div class="grid">
-                <div class="grid-img" style="--r:1; --c:3;">
-                    <div class="img" style="background-image: url(img/img1.jpg);"></div>
-                </div>
+    <svg class="hidden">
+        <symbol id="icon-menu" viewBox="0 0 119 25">
+            <title>menu</title>
+            <path d="M36,8 L36,0 L100,0 L100,8 L36,8 Z M0,8 L0,0 L24,0 L24,8 L0,8 Z M0,28 L0,20 L71,20 L71,28 L0,28 Z"/>
+        </symbol>
+        <symbol id="icon-close" viewBox="0 0 24 24">
+            <title>close</title>
+            <path d="M24 1.485L22.515 0 12 10.515 1.485 0 0 1.485 10.515 12 0 22.515 1.485 24 12 13.484 22.515 24 24 22.515 13.484 12z"/>
+        </symbol>
+        <symbol id="icon-cart" viewBox="0 0 26.2 30">
+            <path d="M25.44 7.6h-5.88V6.46a6.46 6.46 0 1 0-12.92 0V7.6H.76a.76.76 0 0 0-.76.76v20.88a.76.76 0 0 0 .76.76h24.68a.76.76 0 0 0 .76-.76V8.36a.76.76 0 0 0-.76-.76zM8.16 6.46a4.94 4.94 0 0 1 9.88 0V7.6H8.16zm16.52 22H1.52V9.12h5.12v3a.76.76 0 1 0 1.52 0v-3H18v3a.76.76 0 0 0 1.52 0v-3h5.12z"></path>
+        </symbol>
+    </svg>
+    <header>
+        <nav class="menu">
+            <div class="navbar">
+                <a href="Armani">armani.com</a>
 
-                <div class="grid-img" style="--r:1; --c:1;">
-                    <div class="img" style="background-image: url(img/img2.jpg);"></div>
+                <div class="slider">
+                    <button class="action action--cart"><svg class="icon icon-cart"><use xlink:href="#icon-cart"></use></svg></button>
+                    
+                    <div class="button-icon">
+                        <button class="action action--menu"><svg class="icon icon--menu"><use xlink:href="#icon-menu"></use></svg></button>
+                        <button class="action action--close"><svg class="icon icon--close"><use xlink:href="#icon-close"></use></svg></button>
+                    </div>
                 </div>
-
-                <div class="grid-img" style="--r:2; --c:4;">
-                    <div class="img" style="background-image: url(img/img3.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:2; --c:2;">
-                    <div class="img" style="background-image: url(img/img4.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:3; --c:3;">
-                    <div class="img" style="background-image: url(img/img5.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:3; --c:1;">
-                    <div class="img" style="background-image: url(img/img6.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:4; --c:4;">
-                    <div class="img" style="background-image: url(img/img7.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:4; --c:2;">
-                    <div class="img" style="background-image: url(img/img8.jpg);"></div>
-                </div>
-                <div class="grid-img" style="--r:5; --c:3;">
-                    <div class="img" style="background-image: url(img/img9.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:5; --c:1;">
-                    <div class="img" style="background-image: url(img/img10.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:6; --c:4;">
-                    <div class="img" style="background-image: url(img/img11.jpg);"></div>
-                </div>
-
-                <div class="grid-img" style="--r:6; --c:2;">
-                    <div class="img" style="background-image: url(img/img12.jpg);"></div>
-                </div>
-
             </div>
-    
-            <div class="text-title">
-                <div class="title">
-                    <h2>Emporio Armani</h2>
+            <div class="menu__item menu__item--1" data-direction="bt">
+                <div class="menu__item-inner">
+                    <div class="mainmenu">
+                        <a href="#" class="mainmenu__item">Home</a>
+                        <a href="#" class="mainmenu__item">About Us</a>
+                        <a href="#" class="mainmenu__item">Contact</a>
+                    </div>
                 </div>
-    
-                <div class="sub-title">
-                    <h3>M&iacute;gl&iacute;or Orolog&iacute;o</h3>
-                </div>
-            </div>    
-        </div>
+            </div>
+        </nav>
+    </header>   
+    <main>
 
         <div class="main-content">
             <div class="philosophy">
@@ -200,6 +175,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.js"></script>
-    <script type="module" src="main.js"></script>
+    <script type="module" src="img/main.js"></script>
 </body>
 </html>

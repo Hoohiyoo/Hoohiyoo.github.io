@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
     font-family: 'Aremini';
     src: url('fonts/areminiscentsmile/fontfile/areminiscentsmile-Regular.ttf');
@@ -11,110 +12,208 @@
 
 body{
     margin: 0;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
-.loading {
-	position: fixed;
-	z-index: 1000;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: #000;
-    color: crimson;
-	transition: opacity 0.3s;
+.navbar a{
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    pointer-events: auto;
+    text-decoration: none;
+    color: #000;
 }
 
-.loading::after {
-    z-index: 1000;
-	content: '- - - -';
-	font-family: 'Roboto Mono', monospace;
-	font-size: 1.5em;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	animation: animLoader 1s infinite alternate forwards;
+.mainmenu a {
+	text-decoration: none;
+	color: #000;
+	outline: none;
+	transition: color 0.2s;
 }
 
-@keyframes animLoader {
-	0% {
-		content: '- - - -';
-	}
-	25% {
-		content: 'w - - -';
-	}
-	50% {
-		content: '- a - -';
-	}
-	75% {
-		content: '- - i -';
-	}
-	100% {
-		content: 'w a i t';
-	}
-}
-.grid{
-    width: 100%;
-    height: auto;
-    display: grid;
-    grid-template-columns:repeat(4,1fr);
-    position: relative;
+.mainmenu a:hover,
+.mainmenu a:focus {
+	color: #4a4a4a;
 }
 
-.grid-img{
-    will-change: transform;
-    grid-column: var(--c);
-    grid-row: var(--r);
-    position: relative;
+button:focus,
+.mainmenu a:focus {
+	outline: none;
 }
 
-.img{
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-    aspect-ratio: 4/4;
-    filter:opacity(75%);
-}
-
-/**/
-
-.text-title{
-    width: 100%;
-    height: 100vh;
+.navbar{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 2rem 1rem;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+
+.slider{
+    display: flex;
+    align-items: center;
+}
+
+
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: #000;
+}
+
+
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+
+.action {
+	background: none;
+	border: 0;
+	color: #000;
+	cursor: pointer;
+	padding: 0;
+}
+
+.action--menu {
+	pointer-events: auto;
+    opacity: 1;
+	z-index: 999;
+}
+
+.menu--open .action--menu {
+	pointer-events: none;
+}
+
+.action--close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem 1.5rem;
+	z-index: 999;
+	opacity: 0;
+}
+
+.action--cart{
+    pointer-events: auto;
+    opacity: 1;
+    margin: 0 1rem;
+}
+
+.icon--menu {
+	width: 32px;
+    height: 32px;
+    z-index: 999;
+}
+
+.icon--close {
+	width: 16px;
+    height: 32px;
+    z-index: 999;
+}
+
+.menu {
+	text-align: center;
+	width: 100%;
+    height: fit-content;
+	overflow: hidden;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: repeat(3,33.33%);
+	pointer-events: none;
+}
+
+.menu__item {
+	width: 100%;
+    height: 100vh;
     position: fixed;
     top: 0;
+    right: 0;
+	overflow: hidden;
+    z-index: 500;
+}
+
+.menu__item-inner {
+	overflow: hidden;
+	transform: translate3d(100%,0,0);
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.menu__item--1 .menu__item-inner {
+	background: #eee;
+}
+
+
+.mainmenu__item {
+	opacity: 0;
+}
+
+.mainmenu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainmenu {
+    counter-reset: menuitem;
+}
+
+.mainmenu__item{
+	font-size: 5vw;
+		text-transform: lowercase;
+		overflow: visible;
+		margin: 0.5rem 0;
+		padding: 0 0.5rem;
+		position: relative;
+		transition: color 0.3s;
+}
+
+.mainmenu__item:hover {
+    color: #4a4a4a;
+}
+
+.mainmenu__item::before {
+    counter-increment: menuitem;
+    content: counters(menuitem, "", decimal-leading-zero);
+    position: absolute;
+    font-size: 0.85rem;	
+    top: 25%;
+    left: -1.25rem;
+    color: #000;
+}
+
+.mainmenu__item::after {
+    content: '';
+    width: 100%;
+    top: 58%;
+    height: 6px;
+    background: #000;
+    position: absolute;
     left: 0;
+    opacity: 0;
+    transform: scale3d(0,1,1);
+    transition: transform 0.3s, opacity 0.3s;
+    transform-origin: 100% 50%;
 }
 
-.title h2{
-    margin: 0;
-    font-family: 'Georgia Ballpark';
-    font-size: 6rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #b68d40;
+.mainmenu__item:hover::after {
+    opacity: 1;
+    transform: scale3d(1,1,1);
 }
 
-.sub-title h3{
-    margin: 0;
-    font-family: 'Aremini';
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-    color: #b68d40;
-}
 
 /**/
 
@@ -146,6 +245,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     align-items: start;
+    flex-wrap: wrap;
     height: auto;
     width: 100%;
 }
